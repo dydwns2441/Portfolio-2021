@@ -2,20 +2,22 @@ import styled from "styled-components";
 
 export const ProjectWrapper = styled.div`
   width:100%;
+
 `;
 export const ProjectCard = styled.div`
-  /* background-color: #f7f7f7; */
-  border: 2px solid #e5b299;
+  background-color: #fff;
+  /* border: 2px solid #e5b299; */
   width: 100%;
   height: 100%;
   border-radius: 10px;
   padding: 40px 30px;
-  margin: 20px 0;
+  margin: 10px 0;
 `;
 export const ProjectH2 = styled.h2`
   text-align: center;
   margin-bottom: 16px;
   font-size: 18px;
+  font-weight:700;
 
   @media screen and (min-width: 600px) {
     font-size: 28px;
@@ -30,6 +32,7 @@ export const ProjectH4 = styled.h4`
   font-size: 14px;
   color: #7f7f7f;
   margin-bottom: 5px;
+  font-weight: 700;
 
   @media screen and (min-width: 800px) {
     font-size: 18px;

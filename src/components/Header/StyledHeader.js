@@ -15,7 +15,7 @@ export const HeaderContainer = styled.nav`
   top: 0;
   transition: 0.6s ease-in-out all;
   background-color: ${({ scrollNav }) => (scrollNav ? "#fff" : "none")};
-
+  font-family: "Roboto", sans-serif;
   @media screen and (min-width: 768px) {
     /* margin-top: -100px; */
     height: 100px;

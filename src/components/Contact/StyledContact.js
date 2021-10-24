@@ -52,7 +52,7 @@ export const ContentWrapper = styled.div`
 `;
 export const Name = styled.h3`
   margin-bottom:10px;
-  
+  font-weight: 700;
 `;
 export const Content = styled.p`
   font-size: 18px;

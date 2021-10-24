@@ -117,7 +117,7 @@ export const DetailItemP = styled.p`
 `;
 
 export const Skill = styled.div`
-  padding: 3px 5px;
+  padding: 3px 8px 5px;
   border-radius: 4px;
   border: 1px solid #2c3e50;
   display: inline;
@@ -125,6 +125,9 @@ export const Skill = styled.div`
   margin: 2px;
   vertical-align: middle;
   color: #2c3e50;
+  line-height:1.5rem;
+  background-color:#fff;
+  margin-bottom:4px;
 `;
 
 export const SkillsWapper = styled.div`

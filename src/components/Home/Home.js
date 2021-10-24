@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from '../../GlobalStyle'
+import { Container } from "../../theme/GlobalStyle";
 
 import {
   HomeWrapper,
@@ -8,6 +8,8 @@ import {
   HomeContentText,
   HomeImgWrapper,
   HomeImg,
+  ArrowDisplay,
+  DownI,
 } from "./StyledHome";
 
 const Home = () => {
@@ -28,6 +30,9 @@ const Home = () => {
           </HomeContentText>
         </HomeContent>
       </HomeWrapper>
+      <ArrowDisplay className="arrow-below-display">
+        <DownI className="fas fa-angle-double-down"></DownI>
+      </ArrowDisplay>
     </Container>
   );
 }

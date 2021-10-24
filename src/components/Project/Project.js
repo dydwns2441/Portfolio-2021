@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Wrapper, Title } from "../../GlobalStyle";
+import { Container, Wrapper, Title } from '../../theme/GlobalStyle'
 import {
   ProjectWrapper,
   ProjectCard,

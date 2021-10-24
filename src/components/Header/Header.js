@@ -45,7 +45,7 @@ const Header = () => {
             exact="true"
             offset={-80}
           >
-            About me
+            About Me
           </NavLinks>
         </HeaderItem>
         <HeaderItem>

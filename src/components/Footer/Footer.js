@@ -1,5 +1,4 @@
 import React from 'react'
-import {  Title } from "../../GlobalStyle";
 import {
   FooterContainer,
   SocialIcons,
@@ -9,7 +8,7 @@ import {
   Infomation,
   FooterWrapper,
 } from "./StyledFooter";
-import { FaInstagram, FaYoutube, FaGithub,
+import { FaInstagram, FaGithub,
 } from "react-icons/fa";
 
 const Footer = () => {

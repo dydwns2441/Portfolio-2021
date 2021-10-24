@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Wrapper, Title } from "../../GlobalStyle";
+import { Container, Wrapper, Title } from '../../theme/GlobalStyle'
 import {
   AboutProfile,
   AboutProfileImg,
@@ -100,9 +100,9 @@ const About = () => {
             <DetailItem>
               <DetailItemToggle onClick={toggle}>
                 {isOpen ? (
-                  <i class="fas fa-caret-down"></i>
+                  <i className="fas fa-caret-down"></i>
                 ) : (
-                  <i class="fas fa-caret-right"></i>
+                  <i className="fas fa-caret-right"></i>
                 )}{" "}
                 More about me? Just Click!
               </DetailItemToggle>

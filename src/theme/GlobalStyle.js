@@ -1,26 +1,38 @@
 import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
+import reset from 'styled-reset';
 
 export const GlobalStyle = createGlobalStyle`
-    * {
+    ${reset}
+     * {
       box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-        font-family: -apple-system, 'Noto Sans KR', sans-serif;
-        border:none;
-}
+      padding: 0;
+      margin: 0;
+      border:none;
+      
+    }
+    body {
+      background-color: ${({ theme }) => theme.bgColor};
+      color: ${({ theme }) => theme.textColor};
+      font-family: -apple-system,'Noto Sans KR', sans-serif;
+      text-rendering: optimizeLegibility;
+      line-height: 1.5;
+      /* -webkit-font-smoothing: antialiased; */
+    }
 `;
 
 export const Container = styled.section`
   width: 100%;
   height: 100%;
   min-width: 375px;
-  margin-bottom:120px;
+  margin-bottom: 120px;
+  border: none;
 `;
 
 export const Wrapper = styled.div`
   width: 90%;
   margin: 0 auto;
+  border: none;
 
   @media screen and (min-width: 1140px) {
     width: 65%;
