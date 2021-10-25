@@ -53,7 +53,7 @@ const Project = () => {
                 {/* 사이트, 위키, 후기, 주요기능, 회고글, 프론트,백,배포 주스택  */}
                 <ProjectLinkWrapper>
                   <div>
-                    <ProjectLinkH4>사이트 주소</ProjectLinkH4>
+                    <ProjectLinkH4>사이트</ProjectLinkH4>
                     <ProjectLink href="/" target="_blank" rel="noreferrer">
                       uptodoor.shop
                     </ProjectLink>

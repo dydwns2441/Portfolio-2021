@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FooterContainer = styled.footer`
   width: 100%;
   height: 200px;
-  background-color: #ffffff;
+  background-color: ${({ theme }) => theme.cdColor};
   padding: 35px 0 30px 0;
 `;
 

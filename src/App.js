@@ -7,7 +7,6 @@ import Project from './components/Project/Project';
 import Header from './components/Header/Header';
 import { ThemeProvider } from './context/ThemeProvider';
 import { GlobalStyle } from "./theme/GlobalStyle";
-import ScrollToTop from './ScrollToTop';
 import AppLayout from './AppLayout';
 
 function App() {
@@ -23,7 +22,6 @@ function App() {
           <Contact />
           <Footer />
         </AppLayout>
-        <ScrollToTop />
       </ThemeProvider>
     </>
   );

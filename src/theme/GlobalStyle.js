@@ -9,7 +9,12 @@ export const GlobalStyle = createGlobalStyle`
       padding: 0;
       margin: 0;
       border:none;
-      
+      @font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
     }
     body {
       background-color: ${({ theme }) => theme.bgColor};
@@ -27,6 +32,7 @@ export const Container = styled.section`
   min-width: 375px;
   margin-bottom: 120px;
   border: none;
+  font-family: "NanumSquareRound";
 `;
 
 export const Wrapper = styled.div`
@@ -40,9 +46,9 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 40px;
+  font-size: 3rem;
   font-weight: 900;
-  background: -webkit-linear-gradient(left, #7d5a50, #b4846c, #e5b299, #fcdec0);
+  background: -webkit-linear-gradient(left, #889eaf, #334756);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -50,10 +56,10 @@ export const Title = styled.h1`
   padding: 40px 0 0 0;
 
   @media screen and (min-width: 768px) {
-    font-size: 60px;
+    font-size: 3.5rem;
   }
 
   @media screen and (min-width: 1000px) {
-    font-size: 85px;
+    font-size: 5rem;
   }
 `;

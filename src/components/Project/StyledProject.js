@@ -5,8 +5,7 @@ export const ProjectWrapper = styled.div`
 
 `;
 export const ProjectCard = styled.div`
-  background-color: #fff;
-  /* border: 2px solid #e5b299; */
+  background-color: ${({ theme }) => theme.cdColor};
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -30,7 +29,7 @@ export const ProjectH2 = styled.h2`
 export const ProjectH4 = styled.h4`
   text-align: center;
   font-size: 14px;
-  color: #7f7f7f;
+  color: ${({ theme }) => theme.textColor};
   margin-bottom: 5px;
   font-weight: 700;
 
@@ -108,16 +107,14 @@ export const ProjectLinkH4 = styled.h4`
   border-left: 6px solid black;
   padding-left: 10px;
   @media screen and (min-width: 1000px) {
-    margin: 12px 0 0 0;
+    margin: 12px 0 6px 0;
   }
 `;
 export const ProjectLink = styled.a`
   text-decoration: none;
-  color: #000;
+  color : ${({ theme }) => theme.textColor};
   cursor: pointer;
   margin: 0 0 6px 0;
-
-  
 `;
 export const ProjectDesc = styled.p`
   margin: 0 0 12px 0;

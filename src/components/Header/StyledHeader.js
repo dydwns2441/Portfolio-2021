@@ -25,7 +25,11 @@ export const HeaderContainer = styled.nav`
 
 export const HeaderLogo = styled.h3`
   display: none;
-  color: ${({ scrollNav }) => (scrollNav ? "#7D5A50" : "#fff")};
+  color: ${({ scrollNav }) => (scrollNav ? "#2C394B" : "#fff")};
+  /* background: -webkit-linear-gradient(left, #889eaf, #334756);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; */
   cursor: pointer;
   /* color:black; */
   @media screen and (min-width: 768px) {

@@ -58,12 +58,15 @@ const ArrowChk = styled.div`
     opacity: 1;
     z-index: 1;
     cursor: pointer;
-    border-radius: 10px;
-    border: 1px solid #000;
-    background: #f7f7f7;
+    border-radius: 50%;
+    background-color: ${(props) => props.theme.cdColor};
+    box-shadow: ${(props) =>
+      props.mode === "dark"
+        ? "0px 5px 10px rgba(40, 40, 40, 1), 0px 2px 4px rgba(40, 40, 40, 1)"
+        : "0 5px 10px rgba(100, 100, 100, 0.15), 0 2px 4px rgba(100, 100, 100, 0.15)"};
     &:hover {
-      background: linear-gradient(45deg, #7d5a50, #e5b299);
-      color: #fff;
+      background-color: ${(props) => props.theme.bgColor};
+      color: ${(props) => props.theme.textColor};
       border: none;
       border-radius: 50%;
       transition: all 0.1s;
@@ -75,12 +78,6 @@ export const I = styled.i`
   height: 50px;
   line-height: 50px;
   font-size: 30px;
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  &::before {
-    position: fixed;
-    right: 46px;
-    bottom: 30px;
-  }
+  text-align: center;
+  margin-bottom: 10px;
 `;

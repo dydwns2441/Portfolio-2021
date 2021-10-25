@@ -49,6 +49,8 @@ export const HomeContentText = styled.p`
   width: 90%;
   margin: 12px auto 0;
   letter-spacing: -1px;
+  font-family: "NanumSquareRound";
+  font-weight: 700;
   @media screen and (min-width: 480px) {
     font-size: 1.5rem;
   }
@@ -84,8 +86,5 @@ export const ArrowDisplay = styled.div`
 export const DownI = styled.i`
   animation: ${upNdown} 0.7s 0s ease infinite alternate-reverse;
   font-size: 40px;
-  color: #172774;
-  &:hover {
-    color: rgba(0, 0, 0, 0.7);
-  }
+  color: ${({ theme }) => theme.arrowColor};
 `;
