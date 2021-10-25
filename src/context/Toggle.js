@@ -16,8 +16,8 @@ export default ThemeToggle;
 const ToggleWrapper = styled.button`
   background-color: ${(props) => props.theme.cdColor};
   border: ${(props) => props.theme.borderColor};
-  font-size: 20px;
   color: ${(props) => props.theme.arrowColor};
+  font-size: 20px;
   cursor: pointer;
   width: 50px;
   height: 50px;

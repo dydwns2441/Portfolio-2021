@@ -32,7 +32,6 @@ export const Container = styled.section`
   min-width: 375px;
   margin-bottom: 120px;
   border: none;
-  font-family: "NanumSquareRound";
 `;
 
 export const Wrapper = styled.div`

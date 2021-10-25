@@ -2,16 +2,16 @@ import styled from "styled-components";
 
 export const ProjectWrapper = styled.div`
   width:100%;
-
 `;
 export const ProjectCard = styled.div`
   background-color: ${({ theme }) => theme.cdColor};
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  padding: 40px 30px;
-  margin: 10px 0;
+  padding: 40px;
+  margin: 10px 0 30px;
 `;
+
 export const ProjectH2 = styled.h2`
   text-align: center;
   margin-bottom: 16px;
@@ -59,15 +59,17 @@ export const ProjectImgWrapper = styled.div`
     max-width: 300px;
   }
 `;
-export const ProjectImg = styled.img`
+export const ProjectFirstImg = styled.img`
   width: 100%;
   min-height: 250px;
   height: 100%;
-
-  background-image: url("./image/uptodoor.jpeg");
+  background-image: url("./image/uptodoor.jpg");
+  /* background-image: url("./image/uptodoor.jpeg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
+  display: inline-block;
+  content: "";
   /* border: 1px solid black; */
   @media screen and (min-width: 600px) {
     height: 350px;
@@ -78,7 +80,36 @@ export const ProjectImg = styled.img`
   @media screen and (min-width: 1000px) {
     min-width: 360px;
     height: 600px;
-    background-image: url("./image/uptodoor.jpg");
+
+    margin-right: 30px;
+  }
+`;
+
+export const Strong = styled.strong`
+  font-weight: 900;
+`;
+export const ProjectSecondImg = styled.img`
+  width: 100%;
+  min-height: 250px;
+  height: 100%;
+  background-image: url("./image/BowWow1.png");
+  /* background-image: url("./image/uptodoor.jpeg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  display: inline-block;
+  content: "";
+  /* border: 1px solid black; */
+  @media screen and (min-width: 600px) {
+    height: 350px;
+  }
+  @media screen and (min-width: 800px) {
+    height: 450px;
+  }
+  @media screen and (min-width: 1000px) {
+    min-width: 360px;
+    height: 600px;
+
     margin-right: 30px;
   }
 `;
@@ -96,25 +127,25 @@ export const ProjectContentDetail = styled.p`
   }
 `;
 export const ProjectLinkWrapper = styled.div`
-  margin: 15px 0 0 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  
+  display: flex;
+  justify-content: space-between;
 `;
 export const ProjectLinkH4 = styled.h4`
-  margin: 6px 0 0 0;
-  font-weight: 900;
+  margin: 6px 0 6px 0;
+  font-weight: 700;
   border-left: 6px solid black;
   padding-left: 10px;
+  width:50%;
+  > a {
+    font-weight: 400;
+    text-decoration: none;
+    color: ${({ theme }) => theme.textColor};
+    cursor: pointer;
+    margin: 0 0 6px 10px;
+  }
   @media screen and (min-width: 1000px) {
     margin: 12px 0 6px 0;
   }
-`;
-export const ProjectLink = styled.a`
-  text-decoration: none;
-  color : ${({ theme }) => theme.textColor};
-  cursor: pointer;
-  margin: 0 0 6px 0;
 `;
 export const ProjectDesc = styled.p`
   margin: 0 0 12px 0;

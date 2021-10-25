@@ -12,6 +12,7 @@ export const upNdown = keyframes`
 export const HomeWrapper = styled.div`
   width: 100%;
   height: 90vh;
+  max-width:1440px;
 `;
 
 
@@ -61,7 +62,6 @@ export const HomeImgWrapper = styled.div`
   width:100%;
   height:90vh;
   overflow: hidden;
-  
 `;
 
 export const HomeImg = styled.div`

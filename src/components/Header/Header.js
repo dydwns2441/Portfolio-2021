@@ -6,11 +6,13 @@ import {
   HeaderContent,
   HeaderItem,
   NavLinks,
+  HeaderWrapper,
 } from "./StyledHeader";
 
-const Header = () => {
-    const [scrollNav, setScrollNav] = useState(false);
 
+const Header = () => {
+  
+    const [scrollNav, setScrollNav] = useState(false);
     const changeNav = () => {
       if (window.scrollY >= 80) {
         setScrollNav(true);
@@ -26,10 +28,9 @@ const Header = () => {
     const toggleHome = () => {
       scroll.scrollToTop();
     };
-  
   return (
     <HeaderContainer scrollNav={scrollNav}>
-      {/* <HeaderWrapper> */}
+      <HeaderWrapper>
       <HeaderLogo scrollNav={scrollNav} onClick={toggleHome}>
         YJ's Portfolio
       </HeaderLogo>
@@ -73,7 +74,7 @@ const Header = () => {
           </NavLinks>
         </HeaderItem>
       </HeaderContent>
-      {/* </HeaderWrapper> */}
+      </HeaderWrapper>
     </HeaderContainer>
   );
 }

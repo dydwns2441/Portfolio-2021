@@ -59,7 +59,9 @@ const ArrowChk = styled.div`
     z-index: 1;
     cursor: pointer;
     border-radius: 50%;
+    border: ${(props) => props.theme.borderColor};
     background-color: ${(props) => props.theme.cdColor};
+    color: ${(props) => props.theme.arrowColor};
     box-shadow: ${(props) =>
       props.mode === "dark"
         ? "0px 5px 10px rgba(40, 40, 40, 1), 0px 2px 4px rgba(40, 40, 40, 1)"
@@ -67,8 +69,6 @@ const ArrowChk = styled.div`
     &:hover {
       background-color: ${(props) => props.theme.bgColor};
       color: ${(props) => props.theme.textColor};
-      border: none;
-      border-radius: 50%;
       transition: all 0.1s;
     }
   }

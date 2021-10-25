@@ -70,11 +70,16 @@ export const Column2 = styled.div`
   }
 `;
 
-export const DetailItem = styled.div``;
+export const DetailItem = styled.div`
+ > h5{
+   font-weight: 700;
+   margin: 0 0 12px 0;
+ }
+`;
 
 export const DetailItemTitle = styled.h4`
   margin: 16px 0;
-  
+  font-size: 20px;
 `;
 
 export const DetailAWrapper = styled.div`
@@ -108,12 +113,14 @@ export const DetailItemA = styled.a`
 
 export const DetailItemToggle = styled.h4`
   margin: 16px 0;
+  font-size: 20px;
   cursor: pointer;
 `;
 
 export const DetailItemP = styled.p`
   font-size:14px;
   margin-bottom: 10px;
+  line-height:1.5rem;
 `;
 
 export const Skill = styled.div`
