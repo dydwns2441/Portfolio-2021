@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from "../../theme/GlobalStyle";
+import { Container } from "../../style_theme/GlobalStyle";
 
 import {
   HomeWrapper,

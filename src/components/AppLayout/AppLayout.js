@@ -1,7 +1,7 @@
 import React from 'react';
-import { useTheme } from "./context/ThemeProvider";
-import ThemeToggle from './context/Toggle';
-import ScrollToTop from './ScrollToTop';
+import { useTheme } from "../../context/ThemeProvider";
+import ThemeToggle from '../../context/Toggle';
+import ScrollToTop from '../../context/ScrollToTop';
 import styled from 'styled-components';
 
 const AppLayout = ({ children }) => {

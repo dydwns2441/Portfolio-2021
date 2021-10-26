@@ -6,8 +6,8 @@ import Home from './components/Home/Home';
 import Project from './components/Project/Project';
 import Header from './components/Header/Header';
 import { ThemeProvider } from './context/ThemeProvider';
-import { GlobalStyle } from "./theme/GlobalStyle";
-import AppLayout from './AppLayout';
+import { GlobalStyle } from "./style_theme/GlobalStyle";
+import AppLayout from './components/AppLayout/AppLayout'
 
 function App() {
   return (

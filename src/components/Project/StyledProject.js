@@ -3,13 +3,17 @@ import styled from "styled-components";
 export const ProjectWrapper = styled.div`
   width:100%;
 `;
-export const ProjectCard = styled.div`
+export const ProjectCardWrapper = styled.div`
   background-color: ${({ theme }) => theme.cdColor};
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  padding: 40px;
+  padding: 40px 20px;
   margin: 10px 0 30px;
+
+  @media screen and (min-width: 600px) {
+    padding: 40px;
+  }
 `;
 
 export const ProjectH2 = styled.h2`
@@ -63,7 +67,7 @@ export const ProjectFirstImg = styled.img`
   width: 100%;
   min-height: 250px;
   height: 100%;
-  background-image: url("./image/uptodoor.jpg");
+  background-image: url ("./image/uptodoor.jpg");
   /* background-image: url("./image/uptodoor.jpeg"); */
   background-size: cover;
   background-repeat: no-repeat;
@@ -88,11 +92,12 @@ export const ProjectFirstImg = styled.img`
 export const Strong = styled.strong`
   font-weight: 900;
 `;
-export const ProjectSecondImg = styled.img`
+export const ProjectImg = styled.div`
   width: 100%;
   min-height: 250px;
   height: 100%;
-  background-image: url("./image/BowWow1.png");
+  background-image: ${({ image }) =>
+    image ? `url(${image})` : `black`};
   /* background-image: url("./image/uptodoor.jpeg"); */
   background-size: cover;
   background-repeat: no-repeat;
@@ -133,6 +138,7 @@ export const ProjectLinkWrapper = styled.div`
 export const ProjectLinkH4 = styled.h4`
   margin: 6px 0 6px 0;
   font-weight: 700;
+  font-size:14px;
   border-left: 6px solid black;
   padding-left: 10px;
   width:50%;

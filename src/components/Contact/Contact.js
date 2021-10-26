@@ -1,5 +1,5 @@
 import React from 'react'
-import { Title } from "../../theme/GlobalStyle";
+import { Title } from "../../style_theme/GlobalStyle";
 import {
   FlexWrapper,
   ContactWrapper,

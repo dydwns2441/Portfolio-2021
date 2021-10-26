@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Wrapper, Title } from '../../theme/GlobalStyle'
+import { Container, Wrapper, Title } from '../../style_theme/GlobalStyle'
 import {
   AboutProfile,
   AboutProfileImg,

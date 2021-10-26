@@ -65,7 +65,7 @@ export const HomeImgWrapper = styled.div`
 `;
 
 export const HomeImg = styled.div`
-  background-image: url("./image/back1.jpg");
+  background-image: url("./image/back.jpg");
   background-size: cover;
   width: 100%;
   height: 90vh;
