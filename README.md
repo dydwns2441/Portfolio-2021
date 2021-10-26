@@ -3,6 +3,12 @@
 2021년 첫 번째 개인 작업입니다. 방문해 주셔서 감사합니다.<br />
 배포 링크 : https://yongjun.site
 
+## 사용 스택
+
+- Front-end : react, react-hooks, styled-components, 
+- deploy : Vercel  
+
+
 ## 페이지소개
 
 ### Home
