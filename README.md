@@ -1,7 +1,7 @@
 # Portfolio-2021
 
 2021년 첫 번째 개인 작업입니다. 방문해 주셔서 감사합니다.<br />
-배포 링크 : [yongjun.site](yongjun.site)
+배포 링크 : https://yongjun.site
 
 ## 페이지소개
 
