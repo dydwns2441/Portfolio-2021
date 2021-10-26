@@ -41,12 +41,17 @@ export const SocialIcons = styled.div`
   width: 240px;
 
   @media screen and (min-width: 600px) {
-    margin: 0 20px;
+    margin: 0 20px 5px 20px; 
   }
 `;
 
 export const SocialIconLink = styled.a`
   color: black;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 48px;
   > div {
     border-radius: 50%;
@@ -56,12 +61,11 @@ export const SocialIconLink = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom:4px;
+    margin-top: 2px;
   }
 `;
 
 export const Tistory = styled.img`
-    padding-top: 2px;
     width: 32px;
     height: 32px;
 `;
