@@ -12,7 +12,10 @@ export const HeaderContainer = styled.nav`
   position: sticky;
   top: 0;
   transition: 0.4s ease-in-out all;
-  background-color: ${({ scrollNav }) => (scrollNav ? "#fff" : "")};
+  color: #fff;
+  &.bgColor {
+    background-color: ${({ theme }) => theme.cdColor} !important;
+  }
   font-family: "Roboto", sans-serif;
   @media screen and (min-width: 768px) {
     height: 100px;
@@ -33,7 +36,10 @@ export const HeaderWrapper = styled.div`
 
 export const HeaderLogo = styled.h3`
   display: none;
-  color: ${({ scrollNav }) => (scrollNav ? "#2C394B" : "#fff")};
+  color: #fff;
+  &.bgColorText {
+    color: ${({theme})=> theme.textColor} !important;
+  }
   /* background: -webkit-linear-gradient(left, #889eaf, #334756);
   -webkit-background-clip: text;
   background-clip: text;
@@ -54,7 +60,9 @@ export const HeaderContent = styled.ul`
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  color: ${({ scrollNav }) => (scrollNav ? "#7c7c7c" : "#fff")};
+  &.bgColorText {
+    color: ${({theme})=> theme.textColor} !important;
+  }
   @media screen and (min-width: 768px) {
     justify-content: flex-end;
     margin-right:-25px;

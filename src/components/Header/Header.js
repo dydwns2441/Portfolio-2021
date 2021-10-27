@@ -11,13 +11,16 @@ import {
 
 
 const Header = () => {
-  
+
+    const [headerBg, setHeaderBg] = useState("")
     const [scrollNav, setScrollNav] = useState(false);
     const changeNav = () => {
       if (window.scrollY >= 80) {
         setScrollNav(true);
+        setHeaderBg("bgColor")
       } else {
         setScrollNav(false);
+        setHeaderBg("");
       }
     };
 
@@ -28,14 +31,18 @@ const Header = () => {
     const toggleHome = () => {
       scroll.scrollToTop();
     };
+  console.log(headerBg);
   return (
-    <HeaderContainer scrollNav={scrollNav}>
+    <HeaderContainer
+      className={headerBg}
+
+    >
       <HeaderWrapper>
-      <HeaderLogo scrollNav={scrollNav} onClick={toggleHome}>
+      <HeaderLogo className={headerBg ? "bgColorText" : ""} onClick={toggleHome}>
         YJ's Portfolio
       </HeaderLogo>
 
-      <HeaderContent scrollNav={scrollNav}>
+      <HeaderContent className={headerBg ? "bgColorText" : ""}>
         <HeaderItem onClick={toggleHome}>Home</HeaderItem>
         <HeaderItem>
           <NavLinks

@@ -24,6 +24,7 @@ export const GlobalStyle = createGlobalStyle`
       line-height: 1.5;
       /* -webkit-font-smoothing: antialiased; */
     }
+
 `;
 
 export const Container = styled.section`
